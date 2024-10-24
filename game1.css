@@ -1,0 +1,54 @@
+body {
+    font-family: 'Creepster', cursive;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #ff7518;
+}
+
+h1 {
+    color: #ff7518;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #4b0082;
+    border: 2px solid #ff7518;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #ff7518;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff7518;
+    color: #1a1a1a;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4b0082;
+    color: #ff7518;
+}
